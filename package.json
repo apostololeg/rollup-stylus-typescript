@@ -1,0 +1,47 @@
+{
+    "name": "@apostololeg/rollup-stylus-typescript",
+    "version": "0.0.1",
+    "description": "React components",
+    "main": "build/cjs/index.js",
+    "module": "build/esm/index.es.js",
+    "files": [
+        "build",
+        "cjs",
+        "esm"
+    ],
+    "typings": "typings/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/apostololeg/rollup-stylus-typescript.git"
+    },
+    "homepage": "https://github.com/apostololeg/rollup-stylus-typescript.git#readme",
+    "author": "Oleh Apostol",
+    "license": "MIT",
+    "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^21.0.1",
+        "@rollup/plugin-node-resolve": "^13.0.6",
+        "@types/react": "^17.0.35",
+        "@types/react-dom": "^17.0.11",
+        "cssnano": "^5.0.10",
+        "less": "^4.1.2",
+        "path": "^0.12.7",
+        "postcss": "^8.3.11",
+        "postcss-import": "^14.0.2",
+        "postcss-preset-env": "^6.7.0",
+        "rollup": "^2.60.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.1",
+        "rollup-plugin-typescript2": "^0.30.0",
+        "stylus": "^0.55.0",
+        "typescript": "^4.4.4"
+    },
+    "scripts": {
+        "build:less": "INPUT=src/less-component/index.tsx rollup -c rollup.config.ts",
+        "build:styl": "INPUT=src/styl-component/index.tsx rollup -c rollup.config.ts"
+    }
+}
